@@ -2,3 +2,7 @@ setup.data
 setup.log
 _build
 test.byte
+_esy
+node_modules
+*.merlin
+irmmin-test.install
