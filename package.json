@@ -22,7 +22,7 @@
       "require": ["js_of_ocaml"]
     },
     "executable": {
-      "require": ["irmin", "lwt", "irmin-test.lib"],
+      "require": ["irmin", "lwt", "irmin-test.lib", "js_of_ocaml"],
       "main": "IrminTestApp",
       "name": "IrminTestApp.exe"
     }
