@@ -1,5 +1,5 @@
 {
-  "name": "irmin-test",
+  "name": "irmin-adam",
   "version": "0.0.0",
   "description": "My Project", 
   "scripts": { 
@@ -7,7 +7,7 @@
     "node" : "node #{self.target_dir}/default/executable/IrminTestApp.js"
   },
   "esy": {
-    "build": "refmterr dune build -p irmin-test",
+    "build": "refmterr dune build -p irmin-adam",
     "release": {
       "releasedBinaries": [
         "IrminTestApp.exe"
@@ -15,23 +15,14 @@
     }
   },
    "buildDirs": {
-    "test": {
-      "require": ["irmin-test.lib"],
-      "main": "TestIrminTest",
-      "name": "TestIrminTest.exe"
-    },
-    "library": {
-      "name": "irmin-test.lib",
-      "namespace": "IrminTest",
-      "require": ["js_of_ocaml"]
-    },
     "executable": {
-      "require": ["irmin", "lwt", "irmin-test.lib", "js_of_ocaml", "irmin-test", "irmin-pack", "alcotest-lwt"],
+      "require": ["digestif.c", "irmin", "lwt", "js_of_ocaml", "irmin-test", "irmin-pack", "alcotest-lwt"],
       "main": "IrminTestApp",
       "name": "IrminTestApp.exe"
     }
   },
   "dependencies": {
+    "@opam/digestif": "*",
     "@opam/dune": ">=1.6.0",
     "@opam/irmin": "*",
     "@opam/irmin-pack": "*",

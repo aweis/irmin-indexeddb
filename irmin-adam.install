@@ -1,0 +1,11 @@
+lib: [
+  "/home/aweis/irmin-indexeddb/_esy/default/store/b/irmin_test-84320a1f/install/default/lib/irmin-adam/META" {"META"}
+  "/home/aweis/irmin-indexeddb/_esy/default/store/b/irmin_test-84320a1f/install/default/lib/irmin-adam/dune-package" {"dune-package"}
+  "/home/aweis/irmin-indexeddb/_esy/default/store/b/irmin_test-84320a1f/install/default/lib/irmin-adam/opam" {"opam"}
+]
+bin: [
+  "/home/aweis/irmin-indexeddb/_esy/default/store/b/irmin_test-84320a1f/install/default/bin/IrminTestApp.exe" {"IrminTestApp.exe"}
+]
+doc: [
+  "/home/aweis/irmin-indexeddb/_esy/default/store/b/irmin_test-84320a1f/install/default/doc/irmin-adam/README.md"
+]

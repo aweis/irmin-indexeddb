@@ -1,5 +1,5 @@
 {
-  "checksum": "72e99d5f06382845776d6af2a00e8e98",
+  "checksum": "4f0a2f7403a69748e1ea69ac76d2f6f9",
   "root": "irmin-test@link-dev:./package.json",
   "node": {
     "refmterr@3.1.10@d41d8cd9": {
@@ -65,6 +65,7 @@
         "@opam/irmin-pack@github:samoht/irmin:irmin-pack.opam#365a45424ce7fea68adf3ca599d4680d51915704@d41d8cd9",
         "@opam/irmin@github:samoht/irmin:irmin.opam#365a45424ce7fea68adf3ca599d4680d51915704@d41d8cd9",
         "@opam/dune@opam:1.9.1@61bdaadf",
+        "@opam/digestif@opam:0.7.1@fa2f6b50",
         "@opam/cstruct@opam:4.0.0@27f747cf",
         "@opam/bin_prot@opam:v0.12.0@eebc6231",
         "@opam/base64@opam:3.2.0@e1bac209",
