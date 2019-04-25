@@ -3,6 +3,7 @@
 
 open Iridb_utils
 
+module Js = Js_of_ocaml.Js
 class type storageEvent =
   object
     inherit Dom_html.event

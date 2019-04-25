@@ -1,7 +1,11 @@
 {
   "name": "irmin-test",
   "version": "0.0.0",
-  "description": "My Project",
+  "description": "My Project", 
+  "scripts": { 
+    "buildjs": "js_of_ocaml #{self.target_dir}/default/executable/IrminTestApp.bc",
+    "node" : "node #{self.target_dir}/default/executable/IrminTestApp.js"
+  },
   "esy": {
     "build": "refmterr dune build -p irmin-test",
     "release": {
@@ -22,7 +26,7 @@
       "require": ["js_of_ocaml"]
     },
     "executable": {
-      "require": ["irmin", "lwt", "irmin-test.lib", "js_of_ocaml"],
+      "require": ["irmin", "lwt", "irmin-test.lib", "js_of_ocaml", "irmin-test", "irmin-pack", "alcotest-lwt"],
       "main": "IrminTestApp",
       "name": "IrminTestApp.exe"
     }
@@ -30,10 +34,12 @@
   "dependencies": {
     "@opam/dune": ">=1.6.0",
     "@opam/irmin": "*",
+    "@opam/irmin-pack": "*",
+    "@opam/irmin-test": "*",
+    "@opam/alcotest-lwt": "*",
     "@opam/base64": "*",
-    "@opam/irmin": ">= 0.11.0 < 1.0",
     "@opam/cstruct": ">= 1.7.0",
-    "@opam/js_of_ocaml": ">= 2.6 < 4.0",
+    "@opam/js_of_ocaml": ">= 2.6 < 3.4.0",
     "@opam/lwt": "*",
     "@opam/bin_prot": "*",
     "@esy-ocaml/reason": "*",
@@ -45,6 +51,9 @@
     "@opam/merlin": "*"
   },
   "resolutions": {
-    "bin_prot": "talex5/bin_prot.git:opam#40b2cdf"
+    "bin_prot": "talex5/bin_prot.git:opam#40b2cdf",
+    "@opam/irmin": "samoht/irmin:irmin.opam#365a45424ce7fea68adf3ca599d4680d51915704",
+    "@opam/irmin-pack": "samoht/irmin:irmin-pack.opam#365a45424ce7fea68adf3ca599d4680d51915704",
+    "@opam/irmin-test": "samoht/irmin:irmin-test.opam#365a45424ce7fea68adf3ca599d4680d51915704"
   }
 }
