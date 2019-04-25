@@ -7,5 +7,5 @@
    (name IrminTestApp)  ;  From package.json main field
    ; The name of the executable (runnable via esy x IrminTestApp.exe) 
    (public_name IrminTestApp.exe)  ;  From package.json name field
-   (libraries  digestif.c irmin lwt js_of_ocaml irmin-test irmin-pack alcotest-lwt ) ;  From package.json require field (array of strings)
+   (libraries  digestif.ocaml irmin lwt js_of_ocaml irmin-test irmin-pack alcotest-lwt ) ;  From package.json require field (array of strings)
 )

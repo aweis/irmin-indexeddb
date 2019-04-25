@@ -16,7 +16,7 @@
   },
    "buildDirs": {
     "executable": {
-      "require": ["digestif.c", "irmin", "lwt", "js_of_ocaml", "irmin-test", "irmin-pack", "alcotest-lwt"],
+      "require": ["digestif.ocaml", "irmin", "lwt", "js_of_ocaml", "irmin-test", "irmin-pack", "alcotest-lwt"],
       "main": "IrminTestApp",
       "name": "IrminTestApp.exe"
     }
